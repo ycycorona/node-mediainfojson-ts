@@ -21,7 +21,7 @@ export default function (command: string, args: string[]=[], options: child_proc
         resolve(resStr)
       })
       .on('error', (err) => {
-        console.log(err)
+        reject(err)
       })
   })
 }

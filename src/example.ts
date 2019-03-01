@@ -1,22 +1,9 @@
-import childTask from './lib/childTask'
-import * as fs from 'fs-extra'
+import fun from './index'
 
-childTask(
-  'dir',
-  []
-)
-.then(res => {
-  fs.writeFile('./tmp.json', res)
-  .then(data => {
-      //console.log(data)
+fun('E:\\study\\Python全栈9期（第二部分）：并发编程+数据库+前端\\1. 并发编程\\Day35\\01 python fullstack s10 day36 操作系统历史.mp4')
+  .then(res => {
+    console.log(res)
   })
-  .catch(err => {
-    console.log(err)
-  })
-  .finally(() => {
-    debugger
-  })
-})
 
 
 
