@@ -25,3 +25,4 @@ yarn.lock
 .gitkeep
 config/local.js
 pro_types/
+*.code-workspace
